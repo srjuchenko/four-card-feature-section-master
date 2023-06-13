@@ -1,0 +1,165 @@
+/* RESET & GENERAL */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9375rem;
+  color: var(--grayish-blue);
+}
+
+body {
+  padding: 90px 30px;
+  background-color: var(--very-light-gray);
+}
+
+/* HEADER */
+header {
+  text-align: center;
+}
+
+header h2 {
+  font-weight: 200;
+  font-size: 1.8rem;
+  color: var(--very-dark-blue);
+}
+
+header h1 {
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: var(--very-dark-blue);
+}
+
+header p {
+  margin-top: 24px;
+  font-size: 1.1rem;
+}
+
+/* MAIN */
+.cards-list {
+  margin-top: 75px;
+  list-style: none;
+}
+
+.card-item {
+  min-height: 220px;
+  margin-top: 22px;
+  padding: 28px;
+  border-top: 4px solid var(--cyan);
+  border-radius: 5px;
+  background-color: #fff;
+  -webkit-box-shadow: -1px 21px 31px -13px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: -1px 21px 31px -13px rgba(0, 0, 0, 0.18);
+  box-shadow: -1px 21px 31px -13px rgba(0, 0, 0, 0.18);
+}
+
+.card-item-header h3 {
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: var(--very-dark-blue);
+}
+
+.card-item-descr {
+  font-size: 0.9375rem;
+  margin-top: 8px;
+}
+
+.card-item-icon {
+  margin-top: 28px;
+  text-align: right;
+}
+/* FOOTER */
+
+footer {
+  margin-top: 24px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.red-border {
+  border-top-color: var(--red);
+}
+
+.orange-border {
+  border-top-color: var(--orange);
+}
+
+.blue-border {
+  border-top-color: var(--blue);
+}
+
+@media (min-width: 1100px) {
+  .container {
+    margin: 0 auto;
+    max-width: 1100px;
+  }
+
+  header {
+    margin: 0 auto;
+    max-width: 555px;
+  }
+
+  .cards-list {
+    margin-top: 60px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+  }
+
+  .card-item {
+    min-width: 350px;
+  }
+  .card-item:nth-child(1) {
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .card-item:nth-child(2) {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  .card-item:nth-child(3) {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+
+  .card-item:nth-child(4) {
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
