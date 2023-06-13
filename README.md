@@ -11,3 +11,6 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 
 ### Screenshots
+![image](https://github.com/srjuchenko/four-card-feature-section-master/assets/76474133/1b8bc24e-3398-45f9-bfe4-0c443dc80c46)
+
+![image](https://github.com/srjuchenko/four-card-feature-section-master/assets/76474133/4c47c845-4527-48d1-bb18-c73df36f48ce)
